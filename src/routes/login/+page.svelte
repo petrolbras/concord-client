@@ -10,7 +10,7 @@
 </script>
 
 <div class="flex h-screen w-screen flex-col items-center justify-center gap-2 p-4">
-	<img src="/pexe-discord.png" alt="" class="mb-10">
+	<img src="/pexe-concord.png" alt="" class="mb-10">
 	<div class="bg-[#393A41] h-[400px] w-[800px] rounded-lg pt-10">
 		<div class="flex flex-col items-center mt-5 gap-2">
 			<span class="font-bold text-[25px]">Welcome back freedom enjoyer!</span>
