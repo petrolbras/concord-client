@@ -26,7 +26,7 @@
 					bind:value={secretKey}
 				/>
 			</label>
-			<div class="login-btn-width flex flex-col items-center">
+			<div class="btn-width flex flex-col items-center">
 				<Button
 					disabled={!isValid}
 					onclick={() => {

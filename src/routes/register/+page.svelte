@@ -11,26 +11,27 @@
 	let savedKey = $state(false);
 </script>
 
-<div class="flex h-screen w-screen flex-col items-center justify-center">
-	<img src="/pexe-concord.png" alt="" class="mb-10">
-	<div class="bg-[#393A41] h-[400px] w-[800px] rounded-lg">
-		<div class="flex flex-col items-center gap-3 mt-2 text-[20px]">
+<div class="flex min-h-screen max-w-screen flex-col items-center justify-center gap-2">
+	<img src="/pexe-concord.png" alt="" class="hidden xl:block xl:mb-10">
+	<div class="bg-gray-700 w-full h-screen overflow-y-auto pt-4 pb-4 text-sm text-center sm:text-lg md:text-xl xl:max-w-3xl xl:h-fit xl:rounded-lg">
+		<div class="flex flex-col items-center gap-3 mt-2">
+			<img src="/pexe-concord.png" alt="" class="block w-96 p-4 mx-auto xl:hidden">
 			{#if !isKeyShown}
-				<h1 class="flex flex-col items-center text-[35px] font-bold mt-2">Register here!</h1>
-				<p class="text-[40px]">⚠️</p>
-				<h1>A secret key will be generated! Save it somewhere <span class="font-bold">secure and private.</span></h1>
-				<p>Any person with acess to this key can <span class="font-bold">acess your account!</span></p>
-				<p>If you lose it, you <span class="font-bold">won't be able to acess your account.</span></p>
-				<div class="login-btn-width mt-3"><Button onclick={() => (isKeyShown = true)}>Generate key</Button></div>
+				<h1 class="flex flex-col text-wrap items-center text-3xl font-bold mt-2">Register here!</h1>
+				<p class="hidden sm:block sm:text-4xl">⚠️</p>
+					<h1>A secret key will be generated! Save it somewhere <span class="font-bold">secure and private.</span></h1>
+					<p>Any person with acess to this key can <span class="font-bold">access your account!</span></p>
+					<p>If you lose it, you <span class="font-bold">won't be able to access your account.</span></p>
+				<div class="btn-width mt-3"><Button onclick={() => (isKeyShown = true)}>Generate key</Button></div>
 			{/if}
 
 			{#if isKeyShown}
-				<h1 class="flex flex-col items-center text-[35px] font-bold mt-2">This is your key ⬇️</h1>
-				<p class="bg-slate-700 p-2 text-[19px] rounded-lg m-2">{generatedKey}</p>
+				<h1 class="flex flex-col items-center text-3xl font-bold mt-2">This is your key ⬇️</h1>
+				<p class="bg-slate-800 p-2 text-xl rounded-lg m-2">{generatedKey}</p>
 				<label class="flex items-center cursor-pointer">
-					<input class="w-6 h-6 mr-2 rounded-lg accent-orange-500 " type="checkbox" bind:checked={savedKey}> I have saved the key in a secure and private place.
+					<input class="w-6 h-6 ml-1 mr-1 rounded-lg accent-orange-500 " type="checkbox" bind:checked={savedKey}> I have saved the key in a secure and private place.
 				</label>
-				<div class="login-btn-width">
+				<div class="btn-width">
 					<Button
 						disabled={!savedKey}
 						onclick={() => {
@@ -43,7 +44,7 @@
 		</div>
 
 		<div class="flex flex-col items-center mt-4">
-			<p class="text-[#ABACB2]" >Already have an account? <a href="/login" class="text-blue-400 underline hover:no-underline">Log in</a></p>
+			<p class="text-slate-400" >Already have an account? <a href="/login" class="text-blue-400 underline hover:no-underline">Log in</a></p>
 		</div>
 	</div>
 </div>

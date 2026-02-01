@@ -16,7 +16,12 @@ body {
 }
 
 @layer components {
+<<<<<<< Updated upstream
 	.login-btn-width button {
 		@apply w-[450px];
+=======
+	.btn-width button {
+		@apply w-80 md:w-96; 
+>>>>>>> Stashed changes
 	}
 }
