@@ -11,18 +11,17 @@
 
 <div class="flex min-h-screen max-w-screen flex-col items-center justify-center gap-2">
 	<img src="/pexe-concord.png" alt="" class="hidden xl:block xl:mb-10">
-	<div class="bg-[#393A41] w-full h-screen overflow-y-auto pt-4 md:text-2xl xl:max-w-[800px] xl:max-h-[370px] xl:rounded-lg">
-		<img src="/pexe-concord.png" alt="" class="block max-w-[300px] mx-auto md:max-w-[500px] xl:hidden">
-		<div class="flex flex-col items-center mt-4 gap-3">
-			<span class="font-bold text-xl md:text-4xl lg:text-4xl">Welcome back freedom enjoyer!</span>
-			<p class="text-[#dcdcdf] text-md">proceed with the login below.</p>
+	<div class="bg-gray-700 w-full h-screen overflow-y-auto pt-4 pb-4 md:text-xl xl:max-w-xl xl:h-fit xl:rounded-lg">
+		<img src="/pexe-concord.png" alt="" class="block w-96 p-4 mx-auto xl:hidden">
+		<div class="flex flex-col items-center gap-3">
+			<span class="font-bold text-xl md:text-2xl">Welcome back freedom enjoyer!</span>
+			<p class="text-gray-300 text-md">proceed with the login below.</p>
 		</div>
-
 		<div class="flex flex-col gap-4 mt-10">
 			<label class="flex flex-col items-center">
 				<input 
 					placeholder="Insert your 12 words secret key here!" 
-					class="gray-500 border border-gray-500 min-w-[300px] md:min-w-[450px]" 
+					class="gray-500 border border-gray-500 w-80 md:w-96" 
 					type="text" 
 					bind:value={secretKey}
 				/>
@@ -38,7 +37,7 @@
 			</div>
 		</div>
 		<div class="flex flex-col items-center mt-4">
-			<p class="text-[#ABACB2]">New to concord? <a href="/register" class="text-blue-400 underline hover:no-underline">Register instead</a></p>
+			<p class="text-slate-400">New to concord? <a href="/register" class="text-blue-400 underline hover:no-underline">Register instead</a></p>
 		</div>
 	</div>
 </div>
