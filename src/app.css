@@ -17,6 +17,6 @@ body {
 
 @layer components {
 	.login-btn-width button {
-		@apply w-[450px];
+		@apply w-[300px] md:w-[450px]; 
 	}
 }
