@@ -17,7 +17,7 @@
 		<div class="flex flex-col items-center gap-3 mt-2">
 			<img src="/pexe-concord.png" alt="" class="block w-96 p-4 mx-auto xl:hidden">
 			{#if !isKeyShown}
-				<h1 class="flex flex-col text-wrap items-center text-3xl font-bold mt-2">Register here!</h1>
+				<h1 class="flex flex-col items-center text-3xl font-bold mt-2">Register here!</h1>
 				<p class="hidden sm:block sm:text-4xl">⚠️</p>
 					<h1>A secret key will be generated! Save it somewhere <span class="font-bold">secure and private.</span></h1>
 					<p>Any person with acess to this key can <span class="font-bold">access your account!</span></p>
